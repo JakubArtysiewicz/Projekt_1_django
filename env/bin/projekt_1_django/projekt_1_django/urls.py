@@ -16,7 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from aplikacja.views import pierwszastrona, drugastrona
+# trollface = assets/Troolface.png
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('ps/', pierwszastrona),
+    # path('ps/trollface', trollface),
+    path('ps/ds/', drugastrona)
 ]
